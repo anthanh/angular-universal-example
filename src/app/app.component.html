@@ -16,7 +16,7 @@
     </mat-toolbar>
 
     <mat-grid-list cols="2" rowHeight="150px">
-      <mat-grid-tile *ngFor="let photo of (photos$ | async)">
+      <mat-grid-tile *ngFor="let photo of photos">
         <img [src]="photo.thumbnailUrl" [alt]="photo.title">
       </mat-grid-tile>
     </mat-grid-list>
