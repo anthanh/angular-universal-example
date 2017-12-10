@@ -3,8 +3,7 @@
   "project": {
     "name": "angular-universal-example"
   },
-  "apps": [
-    {
+  "apps": [{
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -27,6 +26,24 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
+    },
+    {
+      "root": "src",
+      "outDir": "dist/server",
+      "assets": [],
+      "platform": "server",
+      "index": "index.html",
+      "main": "main.server.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.server.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
     }
   ],
   "e2e": {
@@ -34,8 +51,7 @@
       "config": "./protractor.conf.js"
     }
   },
-  "lint": [
-    {
+  "lint": [{
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
@@ -55,7 +71,6 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {
-    }
+    "component": {}
   }
 }
